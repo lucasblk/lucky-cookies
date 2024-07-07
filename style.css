@@ -106,3 +106,20 @@ button:hover {
       transform: translate3d(-4px, -4px, 0);
     }
   }
+  main:hover {
+    animation: bg-animation;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+  }
+  @keyframes bg-animation {
+    to {
+        background: linear-gradient(180deg, #190361 0%, #BB00FF 100%);
+        transition: .7ms;
+    }
+    50% {
+        background: linear-gradient(90deg, #190361 0%, #BB00FF 100%);
+        transition: .7ms;
+    }
+
+  }
